@@ -295,8 +295,24 @@ export default function LandingPage() {
               </div>
             </AnimatedSection>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
-              {[1, 2, 3].map((i) => (
-                <AnimatedSection key={i} delay={i * 0.2}>
+              {[{
+                name:"EchoFi",
+                token:"1000,000 ECHO",
+                description:"Write a quality thread about our upcoming project launch"
+              },{
+                name:"Stella",
+                token:"2500,000 XLM",
+                description:"Create engaging content about our community fund campaign and earn rewards"
+              },{
+                name:"MunoPay",
+                token:"500,000 MUP",
+                description:"Post a meme about our latest feature collaboration with Stella and earn rewards"
+              }].map((i,index) => (
+
+
+
+
+                <AnimatedSection key={index} delay={index * 0.2}>
                   <motion.div
                     className="flex flex-col overflow-hidden rounded-lg border border-purple-800/50 bg-purple-900/30 backdrop-blur-sm"
                     whileHover={{
@@ -312,13 +328,13 @@ export default function LandingPage() {
                           <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 relative" />
                         </div>
                         <div>
-                          <h3 className="font-bold text-white">Project {i}</h3>
-                          <p className="text-sm text-purple-300">10,000 STELLA tokens</p>
+                          <h3 className="font-bold text-white">{i.name}</h3>
+                          <p className="text-sm text-purple-300">{i.token}</p>
                         </div>
                       </div>
                       <div className="mt-4">
                         <p className="text-sm text-purple-200">
-                          Create engaging content about our latest blockchain innovation and earn rewards.
+                          {i.description}
                         </p>
                       </div>
                     </div>
@@ -367,7 +383,7 @@ export default function LandingPage() {
                     Ready to Start Earning?
                   </h2>
                   <p className="max-w-[900px] text-purple-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Join StellarRewards today and turn your social media influence into rewards
+                    Join EchoFi today and turn your social media influence into rewards
                   </p>
                 </div>
                 <motion.div
@@ -375,11 +391,11 @@ export default function LandingPage() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <Link href="/signup">
+                  <Link href="/">
                     <Button size="lg" className="relative overflow-hidden group">
                       <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-600 group-hover:from-cyan-400 group-hover:to-purple-500 transition-all duration-300"></span>
                       <span className="relative flex items-center">
-                        Sign Up Now
+                        Connect Wallet
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </span>
                     </Button>
@@ -392,7 +408,7 @@ export default function LandingPage() {
       </main>
       <footer className="w-full border-t border-purple-800/30 py-6 md:py-0 bg-black text-purple-200">
         <div className="container px-4 md:px-8 lg:px-12 flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm">© 2025 StellarRewards. All rights reserved.</p>
+          <p className="text-sm">© 2025 EchoFi. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-sm hover:text-white hover:underline underline-offset-4 transition-colors">
               Terms
