@@ -141,7 +141,7 @@ export default function LandingPage() {
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
                     Get Rewarded for Quality Social Content
                   </h1>
-                  <p className="max-w-[800px] text-purple-100 md:text-xl">
+                  <p className="max-w-5xl text-purple-100 md:text-xl">
                     StellarRewards is a SocialFi platform that rewards users for creating engaging content about
                     blockchain projects on Twitter.
                   </p>
@@ -157,7 +157,7 @@ export default function LandingPage() {
                     </Button>
                   </Link>
                   <Link href="#how-it-works">
-                    <Button size="lg" variant="outline" className="text-black border-white/30">
+                    <Button size="lg" variant="outline" className="text-black bg-white hover:bg-none border-white/30">
                       Learn More
                     </Button>
                   </Link>

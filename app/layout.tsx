@@ -6,16 +6,19 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "StellarRewards - Earn Rewards for Social Content",
   description: "A SocialFi platform that rewards users for creating engaging content about blockchain projects",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>{children}</body>
     </html>
   )
 }
-
 
 import './globals.css'
