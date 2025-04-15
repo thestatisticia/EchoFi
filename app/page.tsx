@@ -73,7 +73,7 @@ export default function LandingPage() {
               </span> */}
               {/* add an image */}
               <div className="relative w-28  ml-4 h-28">
-                <Image src="/lg.png" alt="EchoFi" fill className="object-contain h-24 w-24 rounded-full" />
+                <Image src="/logo.png" alt="EchoFi" fill className="object-contain h-24 w-24 rounded-full" />
               </div>
             </div>
 
