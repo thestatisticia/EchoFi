@@ -4,9 +4,9 @@ import { Inter } from "next/font/google"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "StellarRewards - Earn Rewards for Social Content",
+  title: "EchoFi - Earn Rewards for Social Content",
   description: "A SocialFi platform that rewards users for creating engaging content about blockchain projects",
-  generator: 'v0.dev'
+  generator: 'EchoFi'
 }
 
 export default function RootLayout({

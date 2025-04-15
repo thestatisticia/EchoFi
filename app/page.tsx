@@ -73,7 +73,9 @@ export default function LandingPage() {
               </span> */}
               {/* add an image */}
               <div className="relative w-28  ml-4 h-28">
+                <Link href="/">
                 <Image src="/logo.png" alt="EchoFi" fill className="object-contain h-24 w-24 rounded-full" />
+                </Link>
               </div>
             </div>
 
@@ -94,7 +96,7 @@ export default function LandingPage() {
                 <Button className="relative overflow-hidden group">
                   <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-600 group-hover:from-cyan-400 group-hover:to-purple-500 transition-all duration-300"></span>
                  
-                  <Link href="/dashboard">
+                  <Link href="#">
                   <span className="relative flex items-center">
                     <Wallet className="mr-2 h-4 w-4" />
                     Connect Wallet
